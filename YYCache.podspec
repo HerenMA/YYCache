@@ -10,11 +10,10 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '9.0'
   s.source       = { :git => 'https://github.com/HerenMA/YYCache.git', :tag => s.version.to_s }
   s.requires_arc = true
-  
-  ss.source_files = 'YYCache/*.{h,m}'
-  ss.public_header_files = 'YYCache/*.{h}'
-  
   s.libraries = 'sqlite3'
-  s.frameworks = 'UIKit', 'CoreFoundation', 'QuartzCore' 
-
+  s.frameworks = 'UIKit', 'CoreFoundation', 'QuartzCore'
+  
+  s.source_files = 'YYCache/*.{h,m}'
+  s.public_header_files = 'YYCache/*.{h}'
+  
 end
